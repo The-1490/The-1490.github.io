@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Four Pillars</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div>
+      <p class="kicker">National economy · six-month turns</p>
+      <h1>Four Pillars</h1>
+    </div>
+    <div class="top-meta">
+      <div class="pill" id="when">Year 1 · H1</div>
+      <div class="pill" id="seed-pill">Turn 1/10</div>
+      <button type="button" class="ghost" id="new-game">New game</button>
+    </div>
+  </header>
+  <section class="meters" id="meters"></section>
+  <section class="event" id="event"></section>
+  <div class="layout">
+    <form id="controls" class="roles"></form>
+    <aside class="side">
+      <section class="card">
+        <h2>This half</h2>
+        <div id="report" class="report">Set policy, then advance six months. The first event is already on the table.</div>
+      </section>
+      <section class="card">
+        <h2>Path</h2>
+        <canvas id="chart" width="640" height="180"></canvas>
+      </section>
+      <section class="card">
+        <h2>Rules</h2>
+        <ul class="rules">
+          <li>Survive 10 turns (5 years).</li>
+          <li>Workers fail if household cover stays under 65% for two halves.</li>
+          <li>Firms fail if they cover under 70% of interest for two halves.</li>
+          <li>Society fails at stability 0. Banks fail at financial stability 0.</li>
+          <li>Currency crisis: inflation above 50% and confidence under 15.</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+  <footer class="bar">
+    <p id="warn"></p>
+    <button type="button" class="go" id="advance">Advance 6 months</button>
+  </footer>
+</div>
+<div class="overlay" id="overlay" hidden>
+  <div class="modal card">
+    <p class="kicker" id="end-kicker">Outcome</p>
+    <h2 id="end-title">End</h2>
+    <p id="end-body"></p>
+    <button type="button" class="go" id="end-restart">Play again</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
