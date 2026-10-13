@@ -10,12 +10,12 @@
 <div class="app">
   <header class="top">
     <div>
-      <p class="kicker">National economy · six-month turns</p>
+      <p class="kicker">Asymmetric roles · six-month turns · 20-year campaign</p>
       <h1>Four Pillars</h1>
     </div>
     <div class="top-meta">
       <div class="pill" id="when">Year 1 · H1</div>
-      <div class="pill" id="seed-pill">Turn 1/10</div>
+      <div class="pill" id="turn-pill">Turn 1/40</div>
       <button type="button" class="ghost" id="new-game">New game</button>
     </div>
   </header>
@@ -25,28 +25,27 @@
     <form id="controls" class="roles"></form>
     <aside class="side">
       <section class="card">
-        <h2>This half</h2>
-        <div id="report" class="report">Set policy, then advance six months. The first event is already on the table.</div>
+        <h2>After the half</h2>
+        <div id="report" class="report">Each pillar has a private problem. Read it before you move. Public numbers are delayed and incomplete.</div>
       </section>
       <section class="card">
-        <h2>Path</h2>
-        <canvas id="chart" width="640" height="180"></canvas>
+        <h2>Role pressure</h2>
+        <div id="pressures"></div>
       </section>
       <section class="card">
-        <h2>Rules</h2>
+        <h2>How to win</h2>
         <ul class="rules">
-          <li>Survive 10 turns (5 years).</li>
-          <li>Workers fail if household cover stays under 65% for two halves.</li>
-          <li>Firms fail if they cover under 70% of interest for two halves.</li>
-          <li>Society fails at stability 0. Banks fail at financial stability 0.</li>
-          <li>Currency crisis: inflation above 50% and confidence under 15.</li>
+          <li>Survive 40 halves: 20 years.</li>
+          <li>Two bad halves of household cover or firm interest ends it.</li>
+          <li>Legitimacy, credibility, solvency, or living standards at 0 also ends it.</li>
+          <li>Private notes can be wrong. The social feed often is.</li>
         </ul>
       </section>
     </aside>
   </div>
   <footer class="bar">
     <p id="warn"></p>
-    <button type="button" class="go" id="advance">Advance 6 months</button>
+    <button type="button" class="go" id="advance">Resolve this half</button>
   </footer>
 </div>
 <div class="overlay" id="overlay" hidden>
