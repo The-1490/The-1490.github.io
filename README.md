@@ -1,34 +1,23 @@
 # Four Pillars
 
-Turn-based web game about a national economy. One player sets policy for four institutions each half-year, then resolves the shock already on the table.
+A turn-based web economy game. Each half-year, four institutions see different information and solve different problems. Winning means surviving 20 years (40 turns).
 
 ## Play
 
-Open `index.html` in a browser. No build step and no server are required.
+Open `index.html` in a browser. No build step is required.
 
-To publish it with GitHub Pages, set the site source to the `main` branch and the root folder.
+## What changed
 
-## Roles
+- Government gets a confidential political note, which can be wrong.
+- The central bank sees a hidden liquidity gap.
+- Firms get a supplier-cost forecast, which is usually better than the public headline.
+- Workers see real essential spending and a social feed that is sometimes true and sometimes not.
+- Each pillar has an aggressive move: subsidies, price controls, surprise rates, layoffs, bank runs, strikes.
+- The public inflation number is last half's figure.
+- After each half, the game reveals what was true.
 
-- Government: worker tax, firm tax, welfare, and infrastructure. Goal is social stability.
-- Central Bank: policy rate, reserve requirement, and emergency money creation. Goal is price and financial balance.
-- Firms: prices, wages, new loans, and productivity investment. Goal is growth without missing interest.
-- Workers: consumption appetite and how surplus income is saved or invested in firms.
+## Lose
 
-## Round
-
-1. An event is revealed.
-2. Adjust all four roles.
-3. Advance six months.
-4. Read household cover, interest cover, and the public accounts.
-5. Repeat for 10 turns (5 years), unless a crisis ends the game.
-
-## Failures
-
-- Household cover below 65% for two consecutive halves.
-- Firm interest cover below 70% for two consecutive halves.
-- Social stability at 0.
-- Financial stability at 0.
-- Inflation above 50% with currency confidence below 15.
-
-Survival is not the same as a good score. Reckless stimulus can finish five years with a weak verdict.
+- Household cover under 62% for two halves.
+- Firm interest cover under 68% for two halves.
+- Legitimacy, credibility, solvency, living standards, banks, or the currency collapse.
